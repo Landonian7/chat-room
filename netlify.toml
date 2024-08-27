@@ -1,0 +1,9 @@
+[build]
+  command = "npm install"
+  publish = "public"  # or the directory where your static files are located
+
+[[redirects]]
+  from = "/socket.io/*"
+  to = "/socket.io/:splat"
+  status = 200
+  force = true
